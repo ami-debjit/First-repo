@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEBJIT GYM</title>
+</head>
+<!-- <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">"> -->
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("img/bg2.jpg") no-repeat center center/cover;
+
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .left {
+        display: inline;
+        /* border: 2px solid red ; */
+        position: absolute;
+        left: 45px;
+        top: 5px;
+    }
+
+    .mid {
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+        position: relative;
+        top: 0px;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 30px;
+        top: 32px;
+        display: inline;
+        /* border: 2px solid blue; */
+    }
+
+    .nav {
+        display: inline-block;
+    }
+
+    .nav li {
+        display: inline-block;
+
+
+    }
+
+    .nav li a {
+        color: white;
+        text-decoration: none;
+        padding: 32px 15px;
+        font-size: 26px;
+
+    }
+
+    .nav li a:hover {
+        color:grey;
+        text-decoration: underline;
+    }
+
+    .left img {
+        width: 153px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 22px;
+        line-height: 14px;
+    }
+
+    .btn {
+        /* width: 80px; */
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0px 12px;
+        padding: 4px 14px;
+        border: 2px solid gray;
+
+        border-radius: 10px;
+        font-size: 20px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(56, 56, 56);
+    }
+
+    .con {
+        border: 2px solid rgb(186, 178, 178);
+        border-radius: 10px;
+        margin: 152px 59px;
+        padding: 59px 83px;
+        display: inline-block;
+
+    }
+
+    .form input {
+        border: 1px solid greenyellow;
+        display: block;
+        width: 344px;
+        margin: 10px auto;
+        padding: 9px 46px;
+        font-size: 21px;
+        border-radius: 10px;
+        text-align: center;
+    }
+.formm{
+    display: block;
+    width: 144px;
+    margin: auto;
+    padding: 3px 0px;
+}
+
+    .con h1 {
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    .con button {
+        display: block;
+        width: 90%;
+        margin: 15px auto;
+        /* border: 1px solid whitesmoke;
+    border-radius: 6px; */
+    }
+    
+</style>
+
+<body>
+    <header class="head">
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Debjit Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a> </li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="con">
+        <h1>Join to the best GYM by DEBJIT</h1>
+        <form action="backend.php">
+            <div class="form">
+                <input type="text" name="myname" placeholder="Enter Your Name">
+            </div>
+            <div class="form">
+                <input type="text" name="myname" placeholder="Enter Your Age">
+            </div>
+            <div class="form">
+                <input type="text" name="myname" placeholder="Enter Your Address">
+            </div>
+            <div class="formm" id="gender">
+                <label for="g"> Male</label>
+            <input type="radio" name="Mygender" id="g"> 
+            <label for="ga">Female</label>
+            <input type="radio" name="Mygender" id="ga"> 
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
